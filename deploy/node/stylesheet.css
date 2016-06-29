@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+		height: 100%;
+		overflow: auto;
+	}
+
+body {
+ background-color: #ffffff;
+ background-repeat:repeat-x;
+ width: 100%;
+ height: 100%;
+ font-family: Verdana;
+ font-size: 10px;
+ font-style: normal;
+ line-height: normal;
+ font-weight: normal;
+ font-variant: normal;
+ scrollbar-base-color: #000000;
+ text-transform: none;
+ color: #525252;
+ margin: 0px 0px 0px 0px;
+ padding: 0px 0px 0px 0px;
+ }
+
+#console{
+    height:10%;
+    width:100%;
+    bottom:0px;
+    position:absolute;
+}
+
+#facebook{
+    position:absolute;
+    z-index: 999;
+    
+}
+#flashcontent {
+    position: absolute;
+    top: 0px;
+   	left: 0px;
+    height: 90%;
+    width:  100%;
+    z-index:1;
+}
+#noFlashMessage{
+    height:200px;
+    width:600px;
+    margin:auto;
+    color: #F42436;
+    font-size: 12px;
+}

@@ -1,0 +1,1564 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"addC",
+				"addChatMessage"
+			],
+			[
+				"room",
+				"room_number"
+			],
+			[
+				"roo",
+				"roomID"
+			],
+			[
+				"result",
+				"results"
+			],
+			[
+				"str",
+				"strQuery"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"fl",
+				"flashcontent"
+			],
+			[
+				"FB",
+				"FBIDHandler"
+			],
+			[
+				"FBID",
+				"FBIDHandlers"
+			],
+			[
+				"getF",
+				"getFlashMovie"
+			],
+			[
+				"un",
+				"unlockedTracks"
+			],
+			[
+				"unloc",
+				"unlockedTracks"
+			],
+			[
+				"tota",
+				"totalUnlocked"
+			],
+			[
+				"get",
+				"get_results  (function)"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"track",
+				"trackNumber"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"arr",
+				"array	$… = array (…)"
+			],
+			[
+				"ob",
+				"objResult"
+			],
+			[
+				"Serv",
+				"RoomService2  (class)"
+			],
+			[
+				"Room",
+				"RoomService2"
+			],
+			[
+				"host",
+				"hostID"
+			],
+			[
+				"t",
+				"totalTracks  (variable)"
+			],
+			[
+				"nu",
+				"Number"
+			],
+			[
+				"_re",
+				"_resultsCountries"
+			],
+			[
+				"_result",
+				"_resultsAge"
+			],
+			[
+				"galer",
+				"_gallery"
+			],
+			[
+				"re",
+				"results"
+			],
+			[
+				"Show",
+				"SHOW_THUMB"
+			],
+			[
+				"Mod",
+				"ModelEvent"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"Sho",
+				"SHOW_INTRO"
+			],
+			[
+				"thumb",
+				"_thumb"
+			],
+			[
+				"Mo",
+				"MovieClip"
+			],
+			[
+				"Take",
+				"TAKE_PHOTO"
+			],
+			[
+				"bt",
+				"bitmap2"
+			],
+			[
+				"model",
+				"ModelEvent"
+			],
+			[
+				"SHOW",
+				"SHOW_INTRO"
+			],
+			[
+				"takePho",
+				"takePhoto_btn"
+			],
+			[
+				"S",
+				"SPIN"
+			],
+			[
+				"SH",
+				"SHOW_RESULT"
+			],
+			[
+				"SHO",
+				"SHOW_MORE_RESULT"
+			],
+			[
+				"M",
+				"ModelEvent"
+			],
+			[
+				"MOde",
+				"ModelEvent"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Spi",
+				"Spin"
+			],
+			[
+				"results",
+				"results_mc"
+			],
+			[
+				"C",
+				"CLOSE_INTRO"
+			],
+			[
+				"Video",
+				"VideoFeed"
+			],
+			[
+				"fee",
+				"videoFeed_mc"
+			],
+			[
+				"f",
+				"flash"
+			],
+			[
+				"more",
+				"moreResults_mc"
+			],
+			[
+				"Mode",
+				"ModelEvent"
+			],
+			[
+				"Change",
+				"CHANGE_STAGE"
+			],
+			[
+				"co",
+				"connectCamera"
+			],
+			[
+				"Model",
+				"ModelEvent"
+			],
+			[
+				"Mol",
+				"ModelEvent"
+			],
+			[
+				"se",
+				"sendEvent"
+			],
+			[
+				"ge",
+				"getInstance"
+			],
+			[
+				"click",
+				"clickHandler"
+			],
+			[
+				"start",
+				"start_btn"
+			],
+			[
+				"V",
+				"VideoFeed"
+			],
+			[
+				"Vide",
+				"videoFeed"
+			],
+			[
+				"te",
+				"TextField"
+			],
+			[
+				"c",
+				"carlcalderon"
+			],
+			[
+				"sta",
+				"stageWidth"
+			],
+			[
+				"ra",
+				"raysAmount"
+			],
+			[
+				"shape",
+				"linesShape"
+			],
+			[
+				"tra",
+				"triangleHeight"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"WE",
+				"WebService"
+			],
+			[
+				"Stage",
+				"StageResize"
+			],
+			[
+				"R",
+				"RESIZE"
+			],
+			[
+				"com",
+				"commands"
+			],
+			[
+				"Rooms",
+				"RoomsGen"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"cre",
+				"createRoomResponder"
+			],
+			[
+				"water",
+				"waterRipple"
+			],
+			[
+				"app",
+				"appPort"
+			],
+			[
+				"ja",
+				"javascripts/jquery"
+			],
+			[
+				"st",
+				"stylesheets"
+			],
+			[
+				"ht",
+				"html"
+			],
+			[
+				"font-",
+				"font-face"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"section",
+				"sectionW"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"sub",
+				"substring	jsString"
+			],
+			[
+				"detail",
+				"details"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"e",
+				"end"
+			],
+			[
+				"alig",
+				"align:center"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"background-",
+				"background-image"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"COL",
+				"COLLECTION"
+			],
+			[
+				"bo",
+				"bold"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"ca",
+				"capitalize"
+			],
+			[
+				"posi",
+				"position"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"about",
+				"aboutIMG"
+			],
+			[
+				"nav",
+				"navigation"
+			],
+			[
+				"in",
+				"inSection"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"we",
+				"write"
+			],
+			[
+				"setTime",
+				"setTimeout	jsWindow"
+			],
+			[
+				"write",
+				"writeNumbers"
+			],
+			[
+				"Content",
+				"Content-Type"
+			],
+			[
+				"crea",
+				"createServer"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"di",
+				"div"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"col-s",
+				"col-sx-12"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "deploy/node/server.js",
+			"settings":
+			{
+				"buffer_size": 2474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "deploy/index.php",
+			"settings":
+			{
+				"buffer_size": 5843,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dr_ill/Dropbox/_ming/MagicMirror-master/v1/mta_stop_info.php",
+			"settings":
+			{
+				"buffer_size": 1052,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "deploy/css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 861,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Twitter Recess/RecessCompile.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"as3",
+				"Set Syntax: ActionScript 3"
+			],
+			[
+				"3",
+				"Set Syntax: ActionScript 3"
+			],
+			[
+				"as",
+				"Set Syntax: ActionScript 3"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"CSS Less-ish: Decompile"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"less",
+				"List LESS variables"
+			],
+			[
+				"jsli",
+				"JSLint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/swf/main.swf",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/node/index.php",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/qcubed/amfphp/services/TracksService.php",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/qcubed/amfphp/services/disk_cache_example.php",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/qcubed/shared/ez_sql_config.php",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/qcubed/qcubed.inc.php",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/qcubed/amfphp/services/SamplesService.php",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/qcubed/amfphp/services/Rooms.php",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/node/package.json",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/css/stylesheet.css",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/js/swfobject.js",
+		"/Users/dr_ill/Dropbox/_ming/prototypes/multiTrack/deploy/index.php",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/index_old.php",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/channel.php",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/crossdomain.xml",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/testVars/index.html",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/flashtest/index.html",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/flashtest/test8_com.swf.webarchive",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/swf/main.swf",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/qcubed/amfphp/services/Rooms.php",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/sftp-config.json",
+		"/Users/dr_ill/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/prototypes_mingcompany",
+		"/Users/dr_ill/Dropbox/_ming/multiTrack/deploy/qcubed/amfphp/services/test.php",
+		"/Users/dr_ill/Dropbox/_ming/carrera/socialMirorv2/src/com/mingcompany/socialmirror/socialMirrorVer2.as",
+		"/Users/dr_ill/Dropbox/_ming/carrera/socialMirorv2/src/com/mingcompany/socialmirror/events/ModelEvent.as",
+		"/Users/dr_ill/Dropbox/_ming/carrera/socialMirorv2/src/com/mingcompany/socialmirror/events/ModelEvent",
+		"/Users/dr_ill/Dropbox/_ming/ming-ny/deploy/js/ripple.js",
+		"/Users/dr_ill/Dropbox/_ming/test2/public/sounds/adios2.wav",
+		"/Users/dr_ill/Dropbox/_ming/test2/routes/index.js",
+		"/Users/dr_ill/Dropbox/_ming/test2/views/index.hjs",
+		"/Users/dr_ill/Dropbox/_ming/test2/views/manifest.json",
+		"/Users/dr_ill/Dropbox/_ming/test2/public/sounds/arugh.wav",
+		"/Users/dr_ill/Dropbox/_ming/test2/public/javascripts/sounds.js",
+		"/Users/dr_ill/Dropbox/_ming/test2/public/javascripts/jquery-2.0.2.min.map",
+		"/Users/dr_ill/Dropbox/_justcall/adamsMultitrackProject/deploy/test",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/about.region",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/contact.region",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/assets/error-sign.png",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/header.region",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/styles/base.less",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/footer.region",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/stores.region",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/slider.region",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/products.region",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/scripts/jquery-1.10.2.min.js",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/sftp-config.json",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/collections/blog.conf",
+		"/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski/collections/folders.conf",
+		"/Users/dr_ill/Library/Caches/Cleanup At Startup/Transmit/9841E7B4-7489-4C6B-9BD2-1DAF991A1137/index.php",
+		"/Users/dr_ill/Desktop/backup-10.29.2013_23-04-16_inourbi/mysql.sql",
+		"/Users/dr_ill/Dropbox/_VArt/inOurBz/pee_ps_DEV/inour.sql",
+		"/Users/dr_ill/Dropbox/_justcall/MOOSESTUDIO/deploy/js/moose.js",
+		"/Users/dr_ill/Dropbox/_justcall/MOOSESTUDIO/deploy/less/moose.less",
+		"/Users/dr_ill/Dropbox/_justcall/MOOSESTUDIO/deploy/less/moose.temp.less",
+		"/Users/dr_ill/Dropbox/_justcall/MOOSESTUDIO/deploy/css/moose.temp.css",
+		"/Users/dr_ill/Library/Application Support/Sublime Text 2/Packages/User/less2css.sublime-settings",
+		"/Users/dr_ill/Library/Application Support/Sublime Text 2/Packages/Less2Css/Default (OSX).sublime-keymap",
+		"/Users/dr_ill/Dropbox/_justcall/MOOSESTUDIO/deploy/css/moose.css",
+		"/Users/dr_ill/Dropbox/_justcall/MOOSESTUDIO/deploy/less/moose.css",
+		"/Users/dr_ill/Dropbox/_justcall/MOOSESTUDIO/deploy/index.html",
+		"/Users/dr_ill/Library/Application Support/Sublime Text 2/Packages/CSSLint/CSSLint.sublime-settings",
+		"/Users/dr_ill/Library/Application Support/Sublime Text 2/Packages/JSLint/JSLint.sublime-build",
+		"/Users/dr_ill/Library/Application Support/Sublime Text 2/Packages/List LESS Variables/lessvariables.sublime-settings",
+		"/Users/dr_ill/Library/Application Support/Sublime Text 2/Packages/Less2Css/README.md",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/sftp-config.json",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/vote/less/vote.less",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/vote/index.php",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/Less2Css/less2css.sublime-settings",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/index.php",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/less/blii.less",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/css/blii.css",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/js/bli.js",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/php/loadList.php",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/jpBliinspi.sublime-project",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/vote/bootstrap/css/blii.css",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/vote/less/styles.less",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/test.php",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/vote/bootstrap/less/blii.less",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/vote.php",
+		"/Users/swider132/Downloads/jquery-timer-demo/res/demo.js",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/php/deleterow.php",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/php/submit.php",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/Less2Css/README.md",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/css/ie8.css",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/less/ie8.less",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/img/jpLogoB.png",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/php/config.php",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/php/checkStatus.php",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/php/sqlService.php",
+		"/Users/swider132/Dropbox/_justcall/PROTONPLUS/deploy_site/index.html",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/List LESS Variables/lessvariables.sublime-settings",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/css/less/bli.less",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/css/bli.css",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/img/bg.jpg",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/less/bli.css",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/User/SFTP.sublime-settings",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/kitchendev",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/less/bli.less",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/User/less2css.sublime-settings",
+		"/Users/swider132/Dropbox/_kitchen/jeanPaulBliInspiransjeger/deploy/js/sftp-config.json",
+		"/Users/swider132/Library/Application Support/Sublime Text 2/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/swider132/Dropbox/_justcall/PROTONPLUS/deploy_site/bin/docs/assets/img/bootstrap-docs-readme.png",
+		"/Users/swider132/Dropbox/_justcall/PROTONPLUS/deploy_site/bin/docs/assets/js/application.js",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/css/js-videos-slider.css",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/js/quiziPhone.js",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/less/quiz.less",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/index.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/less/js-videos-slider.less",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/quiz/quizIphone.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/php/cronjob1.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/php/queueToMySQL.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/Submit.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/js/quiz.js",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/quiz/index.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/php/check_panoramas.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/js/iphoneQuiz.js",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/indexIE.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/php/cronjobTest.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/css/quiz.css",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/view.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/php/scUpload.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/iframe.php",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/sftp-config.json",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/php/bjerkegrunerlokka_1.flv",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/php/ullevalhagebyspikersuppa.mp4",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/images/linkGame.png",
+		"/Users/swider132/Dropbox/_kitchen/TrafficApp/deploy/images/streetviewCopy.png"
+	],
+	"find":
+	{
+		"height": 64.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open files>,/Users/dr_ill/Dropbox/_VArt/Erin Website/squareTemplate/alex-swiderski",
+			"<open files>",
+			"",
+			"<open files>",
+			"",
+			"/Users/swider132/Dropbox/_justcall/PROTONPLUS/deploy_site/bin/docs/assets/img",
+			"index.html",
+			"<open files>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.warn('FBIDHandlers')",
+			"var_dump",
+			"getCamera",
+			"						",
+			"			\n",
+			"root",
+			"run",
+			"=\"\">",
+			"</div>\n	<div style=\"float:left;width:300px;height:250px;overflow:scroll-y;padding:10px;\">\n		<div id=\"conversation\"></div>\n		<input id=\"data\" style=\"width:200px;\" />\n		<input type=\"button\" id=\"datasend\" value=\"send\" />\n	</div>",
+			"na",
+			"nav",
+			"navba",
+			"nav",
+			"h3",
+			"conta",
+			"popup",
+			"input",
+			"main",
+			"input",
+			"cont",
+			"inpu",
+			"main",
+			"icon",
+			"input",
+			"float",
+			"error",
+			"popup",
+			"(); ",
+			"product",
+			"returnValue",
+			"sqs",
+			"asset",
+			"Media",
+			"focal",
+			"navb",
+			"Home",
+			"    \n",
+			"font",
+			">",
+			"main",
+			"divider",
+			"	\n",
+			">\n",
+			"  \n",
+			">\n",
+			"install",
+			"console.",
+			"$('#voted').html('Takk for din stemme! Du kan stemme igjen i morgen og hver dag frem til konkurransens slutt, fredag 27. september.');\nconsole.",
+			"console",
+			"7",
+			"7 ",
+			"7 s",
+			"sessid",
+			"    <",
+			"parisPlace",
+			"grid",
+			"text",
+			"icon",
+			"footer",
+			"http",
+			"choice",
+			"list",
+			"logo",
+			"row-fluid",
+			"host",
+			"row",
+			"  ",
+			"text",
+			"align",
+			"visibility",
+			"text-a",
+			"span",
+			"Ś",
+			"ż",
+			"ń",
+			"ś",
+			"ł",
+			"ó",
+			"ą",
+			"ę",
+			"../assets/",
+			"maps",
+			"score",
+			"resul",
+			"2",
+			"style",
+			"isIE",
+			"var",
+			"Footer",
+			"view",
+			"php",
+			"movieURL",
+			"show",
+			"      \n",
+			"0px",
+			"background",
+			"cons",
+			"	$message .= \"<tr><td> Velg kj&oslash;ret&oslash;y, medspiller, og svar p&aring; sp&oslash;rsmålene underveis.Ved fullf&oslash;rt spill er dere med i trekningen av to sykler til en verdi p&aring; 7.500 kr.                     </td></tr>\";\nå",
+			"ø",
+			"border=0",
+			"decora",
+			"\"thumb\"",
+			"h.",
+			"var",
+			"\n<",
+			"<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n<title>Quiz</title>\n\n<script type=\"text/javascript\" src=\"../js/jquery-1.10.0.min.js\"></script>\n<!--\n<script type=\"text/javascript\" src=\"../jquery-ui.js\"></script>\n<link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css\" />\n\n-->\n<script type=\"text/javascript\" src=\"../js/swfobject.js\"></script>\n<script type=\"text/javascript\" src=\"../js/quiz.js\"></script>\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/quiz.css\">\n</head>\n<body>\n  <div id=\"quizOverlay\" class='addBg'>\n    <div id='quizWindow'>\n          <div id=\"vehicleChoice\">\n\n            <div id=\"bikeChoice\" class='bikeNotActive'></div>\n            <div id=\"carChoice\" class='carNotActive'></div>\n            <div id='startBtn' class=\"Btn\">START</div>\n            <img src=\"../images/quiz/page12.jpg\"/>\n          </div>\n          <div id=\"friendAndTripChoice\">\n            <div id='fbBtn'>\n              <img src=\"../images/quiz/page2_06.jpg\"/>\n            </div>\n            <div id='contactList'>\n              \n            </div>\n            <div id=\"tripChoice\">\n\n            </div>\n          </div>\n          <div id=\"Questions\">\n            <div id='QContent'>\n              Containt s\n            </div>\n            <div id='Qnav'>\n              <div class=\"QBtn\" value=\"true\">RIKTIG</div>\n              <div class=\"QBtn\" value=\"false\">FEIL</div>\n            </div>\n          </div>\n          <div id=\"results\">\n            <div id='resultScore'>\n              Din score:\n            </div>\n            <div id='desc'>\n            Din score er registrert! N&aring;r din medspiller ogs&aring; har fullf&#248;rt spillet \ner dere med i trekningen av to sykler til en verdi av 7.500 kr.\n            </div>\n            <div>\n              <a class='imgLink' href=\"../Submit.php\" style='padding-left:100px'>\n                <img src=\"../images/quiz/result1.jpg\">\n              </a>\n              <a class='imgLink' href=\"../quiz/\" >\n                <img src=\"../images/quiz/result2.jpg\">\n              </a>\n            </div>\n          </div>\n          \n\n    </div>\n  </div>\n  <div id=\"flashBg\">\n      <object id=\"flashcontent\" flashvars=\"id=<?php echo $_GET['movieURL'];?>\" classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" width=\"100%\" height=\"100%\">\n\n        <param name=\"movie\" value=\"../swf/main.swf\" />\n        <param name=\"allowScriptAccess=\" value=\"always\"/>\n        <param name=\"wmode\" value=\"transparent\">\n        <param name='flashvars' value='id=<?php echo $_GET['movieURL'];?>'/>\n        <!--[if !IE]>-->\n        <object type=\"application/x-shockwave-flash\" data=\"../swf/main.swf\" flashvars=\"id=<?php echo $_GET['MovieURL'];?>\" width=\"100%\" height=\"100%\" wmode=\"transparent\">\n        <!--<![endif]-->\n          <p>loading...</p>\n          <p>     \n          </p>\n          <p>     \n          \n          You need at least Flash Player 10.0 to view this page.\n          \n          </p>\n          \n          <p><a href=\"http://www.adobe.com/go/getflashplayer\"><img src=\"http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif\" alt=\"Get Adobe Flash player\" /></a></p>\n        <!--[if !IE]>-->\n        </object>\n        <!--<![endif]-->\n      </object>\n  </div>\n  <div>\n    \n  </div>\n</body>\n<script>\n  swfobject.registerObject(\"flashcontent\", \"10\", \"expressInstall.swf\");\n \n    window.fbAsyncInit = function() {\n    // init the FB JS SDK\n      FB.init({\n        appId      : '415256188578303',                        // App ID from the app dashboard\n        channelUrl : '//kitchendev.com/vegvesen/channel.php', // Channel file for x-domain comms\n        status     : true,                                     // Check Facebook Login status\n        xfbml      : true                                      // Look for social plugins on the page\n      });\n      // Additional initialization code such as adding Event Listeners goes here\n    };\n\n    // Load the SDK asynchronously\n    (function(d, s, id){\n       var js, fjs = d.getElementsByTagName(s)[0];\n       if (d.getElementById(id)) {return;}\n       js = d.createElement(s); js.id = id;\n       js.src = \"//connect.facebook.net/en_US/all.js\";\n       fjs.parentNode.insertBefore(js, fjs);\n     }(document, 'script', 'facebook-jssdk'));\n\n    function getFlashMovie(movieName) \n    {\n        var isIE = navigator.appName.indexOf(\"Microsoft\") != -1;\n        return (isIE) ? window[movieName] : document[movieName];\n    }\n\n    function sendNumber(bike,path) \n    {\n        console.log(\"Show Number\"+bike);\n        \n        var obj = swfobject.getObjectById(\"flashcontent\");\n        obj.sendToActionScript(bike,path); // e.g. an external interface call\n        //getFlashMovie(\"flashcontent\").sendToAS(num);\n    }\n    function playIt(){\n        var obj = swfobject.getObjectById(\"flashcontent\");\n        obj.playIt();\n    }\n    function cuePointCall(value) {\n        quiz.showStep(value);\n         //document.forms[\"form1\"].output.value += \"ActionScript says: \" + value + \"\\n\";\n    }\n    function redirect(url){\n          window.top.location.href = url;\n        };\n    quiz.init();\n</script>\n</html>\n",
+			"    \n",
+			"æ",
+			"ø",
+			"å",
+			"æ",
+			"ø",
+			"å",
+			"\n",
+			"playIt",
+			"choiceRoad",
+			"choiceRoad\n",
+			"			\n",
+			"step1",
+			"addDomLoadEvent",
+			"registerO",
+			"DRIV",
+			"pics",
+			"maps",
+			"ffmp",
+			"getchil",
+			"']);\n",
+			"ffmpeg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"//console.",
+			"row",
+			"row-fluid",
+			"&#346;",
+			"&#378;",
+			"&#324;",
+			"&#347;",
+			"&#322;",
+			"&#243;",
+			"&#261;",
+			"&#281;",
+			"",
+			"/",
+			"&aring;",
+			"&oslash;",
+			"border=\"0\"",
+			"\"thumbs1\"",
+			"&#230;",
+			"&#248;",
+			"&#229;",
+			"&#248;",
+			"&aring;",
+			"//$params",
+			"$",
+			"this->",
+			"//console.log",
+			"jeanPaul"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "deploy/node/server.js",
+					"settings":
+					{
+						"buffer_size": 2474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "deploy/index.php",
+					"settings":
+					{
+						"buffer_size": 5843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2983,
+								2983
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/dr_ill/Dropbox/_ming/MagicMirror-master/v1/mta_stop_info.php",
+					"settings":
+					{
+						"buffer_size": 1052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "deploy/css/stylesheet.css",
+					"settings":
+					{
+						"buffer_size": 861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 118.0
+	},
+	"output.sftp":
+	{
+		"height": 168.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}
