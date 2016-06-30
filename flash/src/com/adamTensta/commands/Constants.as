@@ -1,12 +1,17 @@
 
+
 package com.adamTensta.commands
 {
 
 	public class Constants
 	{
 		
-		public static const LOCAL:Boolean = false;  public static const _BasePath:String = "sounds/"; public static const _BasePathFLV:String = "../flv/";
-		//public static const LOCAL:Boolean = true; public static const _BasePath:String = "../sounds/"; public static const _BasePathFLV:String = "../flv/";
+		public static const LOCAL:Boolean = true;  
+		public static const _BasePath:String = "../sounds/"; 
+		public static const _BasePathFLV:String = "../flv/";
+		//public static const LOCAL:Boolean = true; 
+		// public static const _BasePath:String = "../sounds/"; 
+		// public static const _BasePathFLV:String = "../flv/";
 		
 		public static const DEFAULT_VOLUME:Number = 0.1;
 		public static const TOTAL_TRACKS:uint = 11;

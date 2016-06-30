@@ -43,7 +43,7 @@ package com.adamTensta.view
 		}
 		
 		private function nextF():void{
-			trace("Adsasd");
+			trace("nextF");
 			TweenMax.allTo([artist_mc,artistTitle_mc,multitrack_mc],1,{delay:4,autoAlpha:0,ease:Expo.easeOut},0,done);
 			
 			

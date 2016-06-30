@@ -91,10 +91,6 @@ class GalleryService
 		}
 		return json_encode($myObj);
   	}
-        
-        
-        
-        
         public function deleteCampaign($id = 1)
   	{
 		$myObj = new stdClass();

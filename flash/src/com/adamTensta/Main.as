@@ -40,7 +40,7 @@ package com.adamTensta
 		{
 			//constructor
 			
-			Security.allowDomain("prototypes.justcallmealex.com");
+			Security.allowDomain("prototypes.mingcompany.com");
 			Debug.log("init");
 			trace("init");
 			_model = Model.getInstance();
