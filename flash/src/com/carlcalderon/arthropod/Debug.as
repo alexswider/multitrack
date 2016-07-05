@@ -265,7 +265,7 @@ package com.carlcalderon.arthropod {
 		 * @param	e			StatusEvent
 		 */
 		private static function status(e:StatusEvent):void {
-			trace( 'Arthropod status:\n' + e.toString() );
+			_model.l( 'Arthropod status:\n' + e.toString() );
 		}
 		
 		/**

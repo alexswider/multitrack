@@ -41,12 +41,14 @@ package com.adamTensta
 			//constructor
 			
 			Security.allowDomain("prototypes.mingcompany.com");
+			Debug.clear();
 			Debug.log("init");
-			trace("init");
+			
 			_model = Model.getInstance();
 			_webOrb = WebService.getInstance();
 			_extJS = JSInterface.getInstance();
 			addEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
+			_model.l("init");
 			
 		}
 
@@ -59,7 +61,7 @@ package com.adamTensta
 			_model.StageWidth  	= stage.stageWidth;
 			paramObj = LoaderInfo(this.root.loaderInfo).parameters;
 			//if there is variable passed check for guid in database and display sample in record box		
-			Debug.log("entrytest:"+paramObj.roomID,0xff00ff);
+			Debug.log("entrytest 111:"+paramObj.roomID,0xff00ff);
 			if(paramObj.roomID)_model.ROOMID = paramObj.roomID;
 			
 			if(Constants.LOCAL){
@@ -68,7 +70,7 @@ package com.adamTensta
 				//Constants._localBasePath = Constants._BasePath;
 			}
 			
-			trace("roomID:"+_model.ROOMID);
+			Debug.log("roomID:"+_model.ROOMID,0xff00ff);
 			
 	//addtrack btn for Dev		
 			showBackground();
@@ -76,7 +78,7 @@ package com.adamTensta
 			intro = new Intro();
 			addChild(intro);
 			intro.x = _model.StageWidth/2 - intro.width/2 ;
-			intro.y = _model.StageHeight/2 - intro.height/2 ;
+			intro.y = 0 ;//_model.StageHeight/2 - intro.height/2 ;
 			
 			TweenMax.delayedCall(5,showTracks);
 		}
@@ -162,10 +164,10 @@ package com.adamTensta
 
 //step 2 : get authorization or just play 3 tracks		
 		private function accessHandler(e:ModelEvent):void{
-			trace("main:acceshandler:");
-			trace("eventType:"+e.type);
-			trace("e:VO:"+e.vo);
-			trace("roomID"+_model.ROOMID);
+			_model.l("main:acceshandler:");
+			_model.l("eventType:"+e.type);
+			_model.l("e:VO:"+e.vo);
+			_model.l("roomID"+_model.ROOMID);
 			
 			if(e.vo != "Not Authorized"){
 				_webOrb.CheckCreateUser();
@@ -177,7 +179,7 @@ package com.adamTensta
 		
 		
 		private function showTeaser():void{
-			trace("show Teaser");
+			_model.l("show Teaser");
 			_model.sendEvent(new ModelEvent(ModelEvent.TRACE,"SHOW TEASER"))
 		}
 		
@@ -186,7 +188,7 @@ package com.adamTensta
 			if(_model.ROOMID!="none"){
 				_webOrb.joinRoom(_model.ROOMID);
 			}else{
-				trace('create Room');
+				_model.l('create Room');
 				_webOrb.createRoom();
 			}
 		}

@@ -57,7 +57,7 @@
 
 		private function added(e:Event):void{
 			removeEventListener(Event.ADDED_TO_STAGE, added);
-			init();
+			//init();
 		}
 		
 		private function init():void{
@@ -108,7 +108,7 @@
 					break;
 				case "NetStream.Seek.Notify":
 					var seekPoint:Number = e.info.seekPoint;
-					trace("seeking to: ", seekPoint);
+					_model.l("seeking to: ", seekPoint);
 					seekPoint == 0 ? seekToBeginning() : seekToOffset(seekPoint);
 					break;
 			}

@@ -24,15 +24,13 @@ package com.adamTensta.view
 			open_mc.visible=false;
 			
 			_model.addEventListener(ModelEvent.SHOW_TEST2,function(){
-				trace("receiveshowtest2:val"+val);
+				_model.l("receiveshowtest2:val"+val);
 				if(_var>1){
 					TweenMax.to(profiles_mc,.5,{alpha:0.2,delay:val/10});
 				}
-				
-				
 			});
 			_model.addEventListener(ModelEvent.SHOW_TESTEND,function(){
-				trace("receiveshowtest2:val"+val);
+				_model.l("receiveshowtest2:val"+val);
 					TweenMax.to(profiles_mc,.5,{alpha:0});
 				
 			});

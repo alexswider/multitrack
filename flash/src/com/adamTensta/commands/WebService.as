@@ -46,11 +46,11 @@
 			_model.addEventListener(ModelEvent.USER_JOINED_JS, checkforUsers);
 			
 			///IMPORTANT  LOCAL TESTING		
-
 			//button.text = "calling amf";
 			_ncWebOrb = new NetConnection();
 			if(Constants.LOCAL){
 				_ncWebOrb.connect('http://prototypes.mingcompany.com/multitrack/qcubed/amfphp/gateway.php');
+				Debug.log("initWbeOrb:Local:",Constants.DEBUG_COLOR_WEBSERVICE);
 				
 			}else{
 				_ncWebOrb.connect('../qcubed/amfphp/gateway.php');
@@ -62,13 +62,13 @@
 //user Service		
 		public function CheckCreateUser():void{
 			var webOrbResponder = new Responder(checkCreateUserResponder, OnErrorHandler);
-			trace("WebOrb.checkUser"+_model.FBID);
+			_model.l("WebOrb.checkUser"+_model.FBID);
 			_ncWebOrb.call("Rooms.CheckCreateUser",webOrbResponder,_model.FBID,_model.FB_NAME,_model.FB_AVATAR_PATH);
 		}
 		
 		
 		public function createRoom():void{
-			trace("webserwice:"+_model.FBID);
+			_model.l("webserwice:"+_model.FBID);
 			var webOrbResponder = new Responder(createRoomResponder, OnErrorHandler);
 			_ncWebOrb.call("Rooms.CreateRoom",webOrbResponder,_model.FBID);
 		}
@@ -93,7 +93,7 @@
 		
 		private function CheckResponder(result:Object):void{
 			Debug.log("amf:ChekResponder:"+result, Constants.DEBUG_COLOR_WEBSERVICE);
-			trace("amf:ChekResponder:"+result);
+			_model.l("amf:ChekResponder:"+result);
 			if(result){
 				var i:uint = 0;
 				while(i<result.length){
@@ -106,7 +106,7 @@
 					_model.currentTracks.push(arr);
 					i++
 				}
-				//trace("afteroomupdate:arr:"+_model.currentTracks);
+				//_model.l("afteroomupdate:arr:"+_model.currentTracks);
 				Debug.log("afteroomupdate:arr:"+_model.currentTracks, Constants.DEBUG_COLOR_WEBSERVICE);
 				_model.sendEvent(new ModelEvent(ModelEvent.ROOM_UPDATE));
 			}
@@ -119,7 +119,7 @@
 	
 		private function joinRoomResponder(result:*):void{
 			Debug.log("amf:joinRoom Responder:"+result, Constants.DEBUG_COLOR_WEBSERVICE);
-			trace("amf:joinRoom Responder:"+result);
+			_model.l("amf:joinRoom Responder:"+result);
 			//FBId = "123" Name = "alex" Path = "" Tracks = "4"
 			
 			switch(result){
@@ -149,7 +149,7 @@
 		private function createRoomResponder(result:Object):void{
 
 			Debug.log("amf:createRoom Responder:"+result, Constants.DEBUG_COLOR_WEBSERVICE);
-				trace("create room responder"+result);
+				_model.l("create room responder"+result);
 				var i:uint = 0;
 				while(i<result.length){
 					var arr:Array = new Array();

@@ -1,7 +1,0 @@
-{
-  "web_accessible_resources": [
-    "images/*.png",
-    "javascripts/jquery-2.0.2.min.map",
-    "templates/*"
-  ]
-}

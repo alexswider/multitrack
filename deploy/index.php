@@ -7,7 +7,7 @@
 <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="js/util.js"></script>
 
-<script src="http://prototypes.mingcompany.com:3010/socket.io/socket.io.js"></script>
+<script src="node/node_modules/socket.io-client/socket.io.js"></script>
 <!--
 <script type="text/javascript" src="js/swfobject.js"></script>
 <script type="text/javascript" src="js/swfforcesize.js"></script>
@@ -48,7 +48,7 @@
   // Gets the 123 out of /room/123
   var room = 12;//<?php echo $_GET['id'];?>;
   console.log("room from path:"+room);
-  var socket = io.connect("http://prototypes.mingcompany.com:3010");
+  var socket = io.connect("localhost:3010");
 
     socket.on("connect", function(){
         //socket.emit('user_join', "Bob", room);
@@ -96,28 +96,28 @@
   };
 
 
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '526582300794681', // App ID
-      channelUrl : '//prototypes.mingcompany.com/multitrack/channel.php', // Channel File
-      status     : true, // check login status
-      cookie     : true, // enable cookies to allow the server to access the session
-      xfbml      : true  // parse XFBML
+  // window.fbAsyncInit = function() {
+  //   FB.init({
+  //     appId      : '526582300794681', // App ID
+  //     channelUrl : '//prototypes.mingcompany.com/multitrack/channel.php', // Channel File
+  //     status     : true, // check login status
+  //     cookie     : true, // enable cookies to allow the server to access the session
+  //     xfbml      : true  // parse XFBML
 
 
-    });
-    console.log("fbInit")
-    // Additional initialization code here
-  };
+  //   });
+  //   console.log("fbInit")
+  //   // Additional initialization code here
+  // };
 
-  // Load the SDK Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document));
+  // // Load the SDK Asynchronously
+  // (function(d){
+  //    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+  //    if (d.getElementById(id)) {return;}
+  //    js = d.createElement('script'); js.id = id; js.async = true;
+  //    js.src = "//connect.facebook.net/en_US/all.js";
+  //    ref.parentNode.insertBefore(js, ref);
+  //  }(document));
 
     consoleFix();
 
@@ -131,43 +131,45 @@ function getFlashMovie(movieName)
     function getMyId(){
        
        console.log("get my ID");
+       document.getElementById("flashcontent").FBIDHandler("alex testing");
 
-       FB.getLoginStatus(function(response) {  
-        if (response.status === 'connected' && response.authResponse) {
-            //console.log("response auth and connected :" +response.name);
-            FB.api('/me', function(response) {
-               document.getElementById("flashcontent").FBIDHandler(response);
-      /*
-               //var obj = swfobject.getObjectById("flashcontent");
-               //obj.FBIDHandler(response);
-               //onsole.log("response auth and connected :"+response);
+
+     //   FB.getLoginStatus(function(response) {  
+     //    if (response.status === 'connected' && response.authResponse) {
+     //        //console.log("response auth and connected :" +response.name);
+     //        FB.api('/me', function(response) {
+     //           document.getElementById("flashcontent").FBIDHandler(response);
+     //  /*
+     //           //var obj = swfobject.getObjectById("flashcontent");
+     //           //obj.FBIDHandler(response);
+     //           //onsole.log("response auth and connected :"+response);
       
-               console.log('profile:id:'+response.id);
-               console.log(response.name);
-               console.log("response:"+response);
-     */
-               for( var lues in response){
-                  var val = response[lues];
-                  console.log(lues +":"+val);
-               }
-             });    
-        } else {
+     //           console.log('profile:id:'+response.id);
+     //           console.log(response.name);
+     //           console.log("response:"+response);
+     // */
+     //           for( var lues in response){
+     //              var val = response[lues];
+     //              console.log(lues +":"+val);
+     //           }
+     //         });    
+     //    } else {
          
-         console.warn('check popup');
-         FB.login(function(response) {
-           if (response.authResponse) {
-             //console.log('Welcome!  Fetching your information.... ');
-             FB.api('/me', function(response) {
-               document.getElementById("flashcontent").FBIDHandler(response);
-              //$("#facebook").hide(); 
-             });
-           } else {
-              document.getElementById("flashcontent").FBIDHandler("Not Authorized");
-            // console.log('User cancelled login or did not fully authorize.');
-           }
-          });
-        }  
-       });
+     //     console.warn('check popup');
+     //     FB.login(function(response) {
+     //       if (response.authResponse) {
+     //         //console.log('Welcome!  Fetching your information.... ');
+     //         FB.api('/me', function(response) {
+     //           document.getElementById("flashcontent").FBIDHandler(response);
+     //          //$("#facebook").hide(); 
+     //         });
+     //       } else {
+     //          document.getElementById("flashcontent").FBIDHandler("Not Authorized");
+     //        // console.log('User cancelled login or did not fully authorize.');
+     //       }
+     //      });
+     //    }  
+     //   });
 
     };
 

@@ -18,7 +18,7 @@ package com.adamTensta.commands
 		
 		private var _ROOMID:String = "none";
 		
-		private var _TOTAL_TRACKS:uint = 12;
+		private var _TOTAL_TRACKS:uint = 4;
 		
 		private var _StageWidth:Number;
 		private var _StageHeight:Number;
@@ -27,7 +27,7 @@ package com.adamTensta.commands
 		//private var currentTracks:Array = [["user name1","IP",'FBID','soundpathUrl'],[],[]]
 		private var _currentTracks:Array = [	];
 		
-		private var _currentlyUnlocked:uint = 3;
+		private var _currentlyUnlocked:uint = 1;
 
 		
 		public function l(v:String):void{

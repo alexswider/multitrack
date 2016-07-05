@@ -27,7 +27,7 @@ package com.adamTensta.view
 		}
 		
 		private function progressHandler(e:ModelEvent){
-			//trace("Navbar:progress:"+e.vo);
+			//_model.l("Navbar:progress:"+e.vo);
 			progress_bar.visible = true;
 			progress_bar.width = _model.StageWidth;
 			progress_bar.scaleX = e.vo;

@@ -31,7 +31,7 @@
 		}
 		
 		public function callExt(e:ModelEvent):void{
-			trace("JSInterface:ModelEvent:"+e.type);
+			_model.l("JSInterface:ModelEvent:"+e.type);
 			if (ExternalInterface.available) {
 				
 				switch(e.type){
@@ -48,14 +48,14 @@
 					break
 					
 					case ModelEvent.GET_FBID:
-						ExternalInterface.call("getMyId");
-						if(Constants.LOCAL){
+						//ExternalInterface.call("getMyId");
+						//if(Constants.LOCAL){
 							_model.FB_AVATAR_PATH = "local:"+ Math.random();
 							_model.FB_NAME = "Localny stasiek"+String(Math.random());
 							_model.FBID = String(Math.round(Math.random()*10000));
 							_model.sendEvent(new ModelEvent(ModelEvent.RECEIVED_FBID, _model.FBID));
 							
-						};
+						//};
 					break
 				}
 				
@@ -86,10 +86,10 @@
 		
 		
 		private function FBIDEventHandler(value:*):void{
-			trace("FBID HANDLE --------?");
-			trace(value.name);
-			trace(value.id);
-			trace(value.link);
+			_model.l("FBID HANDLE --------?");
+			_model.l(value.name);
+			_model.l(value.id);
+			_model.l(value.link);
 			Debug.log("JSInterface:FBIDHandle:"+value.id,Constants.DEBUG_COLOR_JSINTERFACE);
 			_model.FB_AVATAR_PATH = "https://graph.facebook.com/"+value.id+"/picture";
 			_model.FB_NAME = value.name;
@@ -102,7 +102,7 @@
 		}
 		
 		private function receivedFromJavaScript(value:*):void{
-			trace("ExternalInterface:receivedFromJS:"+value);
+			_model.l("ExternalInterface:receivedFromJS:"+value);
 			_model.sendEvent(new ModelEvent(ModelEvent.JS_RETURN_CALL, value));
 			
 		}

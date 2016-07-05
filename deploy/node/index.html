@@ -12,14 +12,14 @@
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
     </style>
-  <script src="http://prototypes.mingcompany.com:3010/socket.io/socket.io.js"></script>
+  <script src="node_modules/socket.io-client/socket.io.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
   <script>
   var socket = io();
 
   // Gets the 123 out of /room/123
   var room = window.location.pathname.substring(6);
-  var socket = io.connect("http://prototypes.mingcompany.com:3010");
+  var socket = io.connect("locahost:3010");
 
     socket.on("connect", function(){
         socket.emit('user_join', "Bob", room);

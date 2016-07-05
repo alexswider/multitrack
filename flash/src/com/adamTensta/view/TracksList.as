@@ -63,7 +63,7 @@
 
 //jsut the view of the amount of tracks		
 		private function showTracks():void{
-		 	
+		 	_model.l("TrackList:showTracks");
 			
 			stripe_mc.x = 0;
 			stripe_mc.y = -stripe_mc.height;
@@ -77,7 +77,7 @@
 			share_mc.visible = false;
 			
 			while(i<_model.TOTAL_TRACKS){
-				trackItem = new EmptyTrackItem(i+1);
+				trackItem = new EmptyTrackItem();
 				addChildAt(trackItem, this.getChildIndex(stripe_mc));
 				
 				var marg = (_model.StageWidth - ((trackItem.width +3)*_model.TOTAL_TRACKS))/2;
@@ -90,7 +90,7 @@
 		}
 		
 		private function addListeners():void{
-			trace("TrackList:AddListener");
+			_model.l("TrackList:AddListener");
 			_model.addEventListener(ModelEvent.RESIZE_STAGE, resizeHandler)
 			_model.addEventListener(ModelEvent.ROOM_UPDATE, unlockEvent);
 			_model.addEventListener(ModelEvent.ROOM_RECEIVED,unlockEvent);
@@ -99,11 +99,12 @@
 			 share_mc.addEventListener(MouseEvent.CLICK, clickHandler);
 			 
 			 
+		/*
 			 _model.addEventListener(ModelEvent.SHOW_TEST2, function(){
 				 var tracko = LoaderMax.getLoader("audio0");
 				 tracko.playSound();
 				 tracko.volume =1;
-				 trace('playVideo');
+				 _model.l('playVideo');
 				 
 				 
 			 });
@@ -112,6 +113,7 @@
 				 TweenMax.to(this, 1,{autoAlpha:0, ease:Expo.easeOut});
 				 
 			 });
+		*/
 		}
 		
 		private function clickHandler(e:MouseEvent):void{
@@ -127,12 +129,12 @@
 			if(e.type != ModelEvent.ROOM_UPDATE)timer.start();
 			var arr:Array = new Array();
 			arr = _model.currentTracks;
-			//trace("unlocked"+tracksUnlocked);
-			trace("UnlockEvent:length:"+arr.length);
+			//_model.l("unlocked"+tracksUnlocked);
+			_model.l("UnlockEvent:length:"+arr.length);
 			
 			for(var i:uint = tracksUnlocked ; i<arr.length ; i++){
 				var trackNr = arr[i][3];
-				trace("ulockEvent:track	#:"+trackNr);
+				_model.l("ulockEvent:track	#:"+trackNr);
 				track = new TrackItem();
 				track.init(arr[i]);
 				addChild(track);
@@ -154,9 +156,9 @@
 		
 		
 		private function init(e:ModelEvent=null):void{
-			trace("TRACKLIST INIT");
-			_model.l("http://prototypes.mingcompany.com/multitrack/index.php?id="+_model.ROOMID);
-			_model.l("tracks # =" + _model.currentTracks.length);
+			//_model.l("TRACKLIST INIT");
+			//_model.l("http://prototypes.mingcompany.com/multitrack/index.php?id="+_model.ROOMID);
+			//_model.l("tracks # =" + _model.currentTracks.length);
 			
 			var total:uint;
 			total = Constants.TOTAL_TRACKS;
@@ -197,12 +199,12 @@
 			var totalUnlocked = _model.currentTracks.length;
 			var i:uint=0;
 			while(i<Constants.TOTAL_TRACKS){
-				trace("playing:"+i);
+				_model.l("playing:"+i);
 				var tracko = LoaderMax.getLoader("audio"+i);
 				tracko.playSound();
 				tracko.volume = 0;
 				
-			/*	
+				
 				if(i<totalUnlocked){
 					track = new TrackItem();
 					track.init(tracks[i]);
@@ -212,7 +214,7 @@
 				}else{
 					tracko.volume = 0;
 				}
-			*/	
+				
 				i++
 			};
 			
