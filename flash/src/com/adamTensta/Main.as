@@ -45,7 +45,7 @@ package com.adamTensta
 			Debug.log("init");
 			
 			_model = Model.getInstance();
-			_webOrb = WebService.getInstance();
+			//_webOrb = WebService.getInstance();
 			_extJS = JSInterface.getInstance();
 			addEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
 			_model.l("init");
@@ -84,18 +84,11 @@ package com.adamTensta
 		}
 		
 		protected function showTracks():void{
-			
-			
-			
 			room = new TracksList();
 			addChild(room);
 			room.x = 0;
 			room.y = _model.StageHeight;
-			
-			
 			showNavbar();
-			
-			
 			//addTrack.visible = false;
 			addListeners();
 		}
@@ -137,10 +130,8 @@ package com.adamTensta
 						shareBox.x = _model.StageWidth/2;
 					}
 				break
-				
 			}
 		}
-		
 		
 		private function roomExpiredHandler(e:ModelEvent):void{
 			roomExpired = new RoomExpired();
@@ -168,7 +159,6 @@ package com.adamTensta
 			_model.l("eventType:"+e.type);
 			_model.l("e:VO:"+e.vo);
 			_model.l("roomID"+_model.ROOMID);
-			
 			if(e.vo != "Not Authorized"){
 				_webOrb.CheckCreateUser();
 			}else{

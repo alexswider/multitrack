@@ -147,23 +147,22 @@
 		}
 		
 		private function createRoomResponder(result:Object):void{
-
 			Debug.log("amf:createRoom Responder:"+result, Constants.DEBUG_COLOR_WEBSERVICE);
-				_model.l("create room responder"+result);
-				var i:uint = 0;
-				while(i<result.length){
-					var arr:Array = new Array();
-					arr[0] = result[i].FBId;
-					arr[1] = result[i].Name;
-					arr[2] = result[i].Path;
-					arr[3] = result[i].Tracks;
-					arr[4] = result[i].RoomId;
-					_model.currentTracks.push(arr);
-					if(i==0)_model.ROOMID = result[i].RoomId;
-					i++
-				}
-				Debug.log("WS:roomId:"+_model.ROOMID);
-				_model.sendEvent(new ModelEvent(ModelEvent.ROOM_CREATED));
+			_model.l("create room responder"+result);
+			var i:uint = 0;
+			while(i<result.length){
+				var arr:Array = new Array();
+				arr[0] = result[i].FBId;
+				arr[1] = result[i].Name;
+				arr[2] = result[i].Path;
+				arr[3] = result[i].Tracks;
+				arr[4] = result[i].RoomId;
+				_model.currentTracks.push(arr);
+				if(i==0)_model.ROOMID = result[i].RoomId;
+				i++
+			}
+			Debug.log("WS:roomId:"+_model.ROOMID);
+			_model.sendEvent(new ModelEvent(ModelEvent.ROOM_CREATED));
 		}
 		
 		private function loadByIDResponder(result:Object):void{
