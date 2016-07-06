@@ -36,9 +36,9 @@
 		
 		public function init(trackData:Array ):void{
 			
-			name_txt.text = trackData[0];
-			ip_txt.text = trackData[1];
-			fbId_txt.text = trackData[2];
+			//name_txt.text = trackData[0];
+			//ip_txt.text = trackData[1];
+			//fbId_txt.text = trackData[2];
 			
 			
 			_model.sendEvent(new ModelEvent(ModelEvent.LOAD_SOUND,trackData[3]));

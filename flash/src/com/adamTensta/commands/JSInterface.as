@@ -69,6 +69,7 @@
 			ExternalInterface.addCallback("FBIDHandler", FBIDEventHandler);
 			ExternalInterface.addCallback("JSInit",initHandler);
 			ExternalInterface.addCallback("UserJoined", userJoined);
+			ExternalInterface.addCallback("Userleft", userLeft);
 			_model.addEventListener(ModelEvent.GET_FBID,callExt);
 			_model.addEventListener(ModelEvent.ROOM_RECEIVED,callExt);
 			_model.addEventListener(ModelEvent.ROOM_CREATED,callExt);
@@ -83,23 +84,11 @@
 			_model.sendEvent(new ModelEvent(ModelEvent.USER_JOINED_JS,value));
 			
 		}
-		
-		
-		private function FBIDEventHandler(value:*):void{
-			_model.l("FBID HANDLE --------?");
-			_model.l(value.name);
-			_model.l(value.id);
-			_model.l(value.link);
-			Debug.log("JSInterface:FBIDHandle:"+value.id,Constants.DEBUG_COLOR_JSINTERFACE);
-			_model.FB_AVATAR_PATH = "https://graph.facebook.com/"+value.id+"/picture";
-			_model.FB_NAME = value.name;
-			_model.FBID = value.id;
+		private function userLeft(value:*){
+			_model.sendEvent(new ModelEvent(ModelEvent.USER_LEFT_JS,value));
 			
-			
-			//picture?type=square"
-			
-			_model.sendEvent(new ModelEvent(ModelEvent.RECEIVED_FBID, value));
 		}
+		
 		
 		private function receivedFromJavaScript(value:*):void{
 			_model.l("ExternalInterface:receivedFromJS:"+value);

@@ -48,7 +48,7 @@ package com.adamTensta
 			//_webOrb = WebService.getInstance();
 			_extJS = JSInterface.getInstance();
 			addEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
-			_model.l("init");
+			//_model.l("init");
 			
 		}
 
@@ -99,11 +99,11 @@ package com.adamTensta
 			stage.addEventListener(Event.RESIZE, resizeHandler);
 			
 			resizeHandler(new Event(""));
-			_model.addEventListener(ModelEvent.RECEIVED_FBID, accessHandler);
+			//_model.addEventListener(ModelEvent.RECEIVED_FBID, accessHandler);
 			_model.addEventListener(ModelEvent.USER_PULLED, checkTrackStatus);
-			_model.addEventListener(ModelEvent.ROOM_EXPIRED, roomExpiredHandler);
-			_model.addEventListener(ModelEvent.CLOSE_SHAREBOX, shareBoxAction);
-			_model.addEventListener(ModelEvent.SHOW_SHAREBOX, shareBoxAction);
+			//_model.addEventListener(ModelEvent.ROOM_EXPIRED, roomExpiredHandler);
+			//_model.addEventListener(ModelEvent.CLOSE_SHAREBOX, shareBoxAction);
+			//_model.addEventListener(ModelEvent.SHOW_SHAREBOX, shareBoxAction);
 			
 			
 //step 1 : authorize app			
@@ -132,57 +132,6 @@ package com.adamTensta
 				break
 			}
 		}
-		
-		private function roomExpiredHandler(e:ModelEvent):void{
-			roomExpired = new RoomExpired();
-			addChild(roomExpired);
-			roomExpired.x = _model.StageWidth/2;
-			roomExpired.y = _model.StageHeight/2;
-			Debug.log("Main:roomExpired");
-			MovieClip(roomExpired.getChildByName("btn")).addEventListener(MouseEvent.CLICK,resetRoom);
-		}
-		
-		private function resetRoom(e:MouseEvent):void{
-			roomExpired.visible = false;
-			_model.ROOMID = "none";
-			_model.sendEvent(new ModelEvent(ModelEvent.USER_PULLED));
-		}
-			
-		private function getFBID(e:MouseEvent):void{
-			_model.sendEvent(new ModelEvent(ModelEvent.GET_FBID));
-			intro.visible = false;
-		}
-
-//step 2 : get authorization or just play 3 tracks		
-		private function accessHandler(e:ModelEvent):void{
-			_model.l("main:acceshandler:");
-			_model.l("eventType:"+e.type);
-			_model.l("e:VO:"+e.vo);
-			_model.l("roomID"+_model.ROOMID);
-			if(e.vo != "Not Authorized"){
-				_webOrb.CheckCreateUser();
-			}else{
-				showTeaser();
-			}
-		}
-		
-		
-		
-		private function showTeaser():void{
-			_model.l("show Teaser");
-			_model.sendEvent(new ModelEvent(ModelEvent.TRACE,"SHOW TEASER"))
-		}
-		
-//step 3 : check if I am a host	or joined a room already
-		private function checkTrackStatus(e:ModelEvent):void{
-			if(_model.ROOMID!="none"){
-				_webOrb.joinRoom(_model.ROOMID);
-			}else{
-				_model.l('create Room');
-				_webOrb.createRoom();
-			}
-		}
-		
 //step 4 : get room tracks 		
 		private function init(e:ModelEvent=null):void{
 			
