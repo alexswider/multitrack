@@ -1,13 +1,8 @@
-    var socket = io();
+    var socket;
 
-    function initSocket(){
-
-        $('form').submit(function() {
-            console.log('chatsubmit');
-            socket.emit('chat message', $('#m').val());
-            $('#m').val('');
-            return false;
-        });
+function initSocket(){
+        socket = io();
+        
         socket.on('chat message', function(msg) {
             $('#messages').append($('<li>').text(msg));
         });
@@ -27,7 +22,7 @@
             changeTrack(msg);
         });
 
-
+        showChatRoom();
 }
 
 
@@ -39,3 +34,10 @@ function howMany(){
 sendBrowserClosedMessageToServer = function(){
     io.emit('disconnect');
 }
+
+
+showChatRoom = function(){
+    console.log("showchatroom");
+    $("#right").css("display","block");
+}
+

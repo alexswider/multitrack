@@ -10,21 +10,21 @@ function initSound() {
      if (!createjs.Sound.initializeDefaultPlugins()) {
         return; }
 
-    var audioPath = "sounds/";
-    var sounds = [
-        { id: "1", src: "1.mp3" },
-        { id: "2", src: "2.mp3" },
-        { id: "3", src: "3.mp3" },
-        { id: "4", src: "4.mp3" },
-        { id: "thunder", src: "Thunder1.mp3" }
+    // var audioPath = "sounds/";
+    // var sounds = [
+    //     { id: "1", src: "1.mp3" },
+    //     { id: "2", src: "2.mp3" },
+    //     { id: "3", src: "3.mp3" },
+    //     { id: "4", src: "4.mp3" },
+    //     { id: "thunder", src: "Thunder1.mp3" }
 
-    ];
+    // ];
 
-   console.log("loading audio");
-    createjs.Sound.alternateExtensions = ["mp3"];
-    var loadProxy = createjs.proxy(this.handleLoad, this);
-    createjs.Sound.addEventListener("fileload", loadProxy);
-    createjs.Sound.registerSounds(sounds, audioPath);
+  /// console.log("loading audio");
+ //   createjs.Sound.alternateExtensions = ["mp3"];
+    //var loadProxy = createjs.proxy(this.handleLoad, this);
+   //createjs.Sound.addEventListener("fileload", loadProxy);
+   // createjs.Sound.registerSounds(manifest);
 }
 
 function handleLoad(event) {
@@ -33,7 +33,7 @@ function handleLoad(event) {
 }
 
 function playSound(id){
-    instance = createjs.Sound.play(id);
+    instance = createjs.Sound.play("sound"+id);
     console.log("Playing " + id);
     currentID = id;
 }
@@ -43,8 +43,9 @@ function changeTrack(_id){
     if(!instance)return;
     position = instance.getPosition();
     createjs.Sound.stop();
-    instance = createjs.Sound.play(_id);
+    instance = createjs.Sound.play("sound"+_id);
     instance.position = position;
+    changeTracks(_id);
 }
 
 function pauseToggle(){

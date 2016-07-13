@@ -19,16 +19,22 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="libs/easeljs-NEXT.min.js"></script>
     <script type="text/javascript" src="libs/soundjs-NEXT.combined.js"></script>
+    <script type="text/javascript" src="libs/preloadjs-NEXT.min.js"></script>
+    <script type="text/javascript" src="libs/tweenjs-NEXT.min.js"></script>
+    <script type="text/javascript" src="js/assets.js"></script>
     <script type="text/javascript" src="js/sounds.js"></script>
     <script type="text/javascript" src="js/socketScript.js"></script>
+    <script type="text/javascript" src="js/visual.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+   
     <div id="interactive" class="SoundJS">
+         <div id="connectBtn" class="btn">connect</div>
         <div id="playBtn" class="btn">play</div>
         <div id="stopBtn" class="btn">stop</div>
         <div id="amountBtn" class="btn">howMany?</div>
         <div id="muteBtn" class="btn">mute</div>
     </div>
-    <div id="error"></div>
+    <canvas id="canvas1" width="1000" height="800"></canvas>
     <div id="right">
         <ul id="messages"></ul>
         <form action="">
@@ -36,16 +42,17 @@
             <button>Send</button>
         </form>
     </div>
-    <h1 class="text-xs-center">Hello World</h1>
+    
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    
     <script>
     function init() {
-        initSocket();
-        initSound();
-        addEventListenersMain();
+       
+        //in assets.js
+        loadAssets();
+       
 
     }
     </script>

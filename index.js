@@ -11,6 +11,7 @@ app.get('/', function(req, res){
 });
 app.use('/swf', express.static('swf'));
 app.use('/css', express.static(env+'/css'));
+app.use('/img', express.static(env+'/img'));
 app.use('/sounds', express.static(env+'/sounds'));
 app.use('/soundjs', express.static(env+'/soundjs'));
 app.use('/js', express.static(env+'/js'));
