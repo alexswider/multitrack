@@ -11,19 +11,25 @@ initAnim = function(){
     track1 = new createjs.Shape();
     track1.graphics.beginBitmapFill(track1IMG).drawRect(0,0,w+track1IMG.width,track1IMG.height);
     track1.tileW = track1IMG.width;
-    track1.y = h - track1IMG.height;
+    track1.y =0;
+    track1.x = w/2;
+
 
     var track2IMG = loader.getResult("wave2");
     track2 = new createjs.Bitmap(track2IMG);
     track2.y = 200;
+    track2.x = w/2;
 
     var track3IMG = loader.getResult("wave3");
     track3 = new createjs.Bitmap(track3IMG);
     track3.y = 400;
+    track3.x = w/2;
+
 
     var track4IMG = loader.getResult("wave4");
     track4 = new createjs.Bitmap(track4IMG);
     track4.y = 600;
+    track4.x = w/2;
 
     
     console.log(w,h);
@@ -35,9 +41,6 @@ initAnim = function(){
     stage.addChild(track3);
     stage.addChild(track4);
 
-
-    track1.x = 0;
-    track1.y = 0;
 
     changeTracks(1);
     //var shape = new createjs.Shape();
