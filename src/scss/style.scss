@@ -31,7 +31,8 @@ body {
 }
 
 #startBtn {
-    top: 50%;
+
+    top: 51%;;
     left: 50%;
     position: absolute;
     display: block;
@@ -52,6 +53,13 @@ body {
     font-size: 12px;
 }
 
+#connectBtn, 
+#playBtn, 
+#stopBtn, 
+#amountBtn, 
+#muteBtn {
+    display:none;
+}
 
 /*
   CHAT MODULE

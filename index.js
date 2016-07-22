@@ -3,17 +3,17 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http, {'pingInterval': 3000, 'pingTimeout': 1000});
 //var __dirname = "./dist";
-var  env = "src";
+var  env = "dist";
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname +"/src/index.html");
+  res.sendFile(__dirname +"/dist/index.html");
  //res.sendFile(__dirname +"/src/sample.html");
 });
-app.use('/swf', express.static('swf'));
+// app.use('/swf', express.static('swf'));
 app.use('/css', express.static(env+'/css'));
 app.use('/img', express.static(env+'/img'));
 app.use('/sounds', express.static(env+'/sounds'));
-app.use('/soundjs', express.static(env+'/soundjs'));
+// app.use('/soundjs', express.static(env+'/soundjs'));
 app.use('/js', express.static(env+'/js'));
 app.use('/libs', express.static(env+'/libs'));
 

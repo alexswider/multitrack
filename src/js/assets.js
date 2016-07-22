@@ -64,7 +64,7 @@ function handleFileProgress(event) {
  
 function loadComplete(event) {
     console.log("Finished Loading Assets");
-
+    $("#connectBtn").css("display","block");
 
      //initSocket();
      initSound();

@@ -3,10 +3,17 @@
 var archiveName = 'multitrack';
 
 // dependencies
+var plugins = require('gulp-load-plugins')({
+        rename: {
+            'gulp-live-server': 'serve'
+        }
+    });
+var notify = require("gulp-notify");
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
+var image = require('gulp-image');
 var minifyHTML = require('gulp-htmlmin');
 var rename = require('gulp-rename');
 var del = require('del');
@@ -46,6 +53,53 @@ gulp.task('uglify:dist', function() {
         .pipe(gulp.dest('dist/js/'));
 });
 
+//images optimalization tool
+gulp.task('build-images', function(){
+  return gulp.src('src/img/**/*.*')
+  // Caching images that ran through imagemin
+  .pipe(image({
+      pngquant: true,
+      optipng: false,
+      zopflipng: true,
+      advpng: true,
+      jpegRecompress: false,
+      jpegoptim: true,
+      mozjpeg: true,
+      gifsicle: true,
+      svgo: true
+    }))
+  .pipe(gulp.dest('dist/img'))
+});
+
+
+
+// Minify Custom JS: Run manually with: "gulp build-js"
+gulp.task('build-js', function () {
+    return gulp.src('src/js/*.js')
+        
+        .pipe(plugins.jshint())
+        // Use gulp-notify as jshint reporter 
+        .pipe(notify(function (file) {
+          if (file.jshint.success) {
+            // Don't show something if success 
+            return false;
+          }
+     
+          var errors = file.jshint.results.map(function (data) {
+            if (data.error) {
+              return "(" + data.error.line + ':' + data.error.character + ') ' + data.error.reason;
+            }
+          }).join("\n");
+          return file.relative + " (" + file.jshint.results.length + " errors)\n" + errors;
+        }))
+        .pipe(plugins.uglify({
+            output: {
+                'ascii_only': true
+            }
+        }))
+        .pipe(plugins.concat('scripts.min.js'))
+        .pipe(gulp.dest('dist/js'));
+});
 
 gulp.task('sass:dev', function() {
     return gulp.src('src/scss/style.scss')
@@ -92,8 +146,7 @@ gulp.task('minify-html', function() {
 
 gulp.task('del', function() {
     del([
-        'dist/*',
-        'archive/*'
+        'dist/*'
     ])
 });
 
@@ -120,18 +173,10 @@ gulp.task('open', function() {
 });
 
 gulp.task('copy-to-dist-folder', function() {
-    return gulp.src(['src/index.html', 'src/css/style.css', 'src/img/*.png', 'src/img/*.jpg', 'src/img/*.gif', 'src/img/*.svg', 'src/js/script.js', '!src/comp*'])
+    return gulp.src(['src/**/*.*', '!src/scss*'])
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('compress', function() {
-    return gulp.src('dist/*')
-        // for quick access, you can change this
-        // name at the top of this file
-        .pipe(zip(archiveName+'.zip'))
-        .pipe(filesize())
-        .pipe(gulp.dest('delivery'));
-});
 
 /**
  * $ gulp server
@@ -147,36 +192,18 @@ gulp.task('server', function() {
   });
 })
 
-gulp.task('archive', function() {
-    // make a zip all the files, including dev folder, for archiving the banner
-   var success = gulp.src(['gulpfile.js', 'package.json', '*.sublime-project', 'dev/*', 'dist/*', 'backupImage/*', 'delivery/*'], {cwdbase: true})
-        // for quick access, you can change this
-        // name at the top of this file
-        .pipe(zip('archive-'+archiveName+'.zip'))
-        .pipe(gulp.dest('archive'));
-    gutil.log('--------------------------------');
-    gutil.log(pkg.name+' has been archived in');
-    gutil.log('archive/'+ gutil.colors.yellow('archive-'+archiveName+'.zip') );
-    gutil.log('--------------------------------');
-    return success;
-});
-
 gulp.task('basic-reload', function() {
     gulp.src('src')
         .pipe(connect.reload());
 });
 
 gulp.task('watch-src', function() {
-    gulp.watch(['src/*.html', 'src/js/*.js'], ['basic-reload']);
-    gulp.watch(['src/scss/*.scss'], ['sass:dev']);
-    gulp.watch(['src/css/*.css'], ['basic-reload']);
-  //  gulp.watch(['./index.js'], ['server']);
+    gulp.watch(['dist/*.html', 'dist/js/*.js','dist/css/*.css'], ['basic-reload']);
+    gulp.watch(['src/js/**/*.*'],["js-src"])
+    //gulp.watch(['src/scss/*.scss'], ['sass:dev']);
+    gulp.watch(['src/scss/*.scss'], ['sass:dist']);
+    
 });
-
-// gulp.task('build', function(callback) {
-//     runSequence('del', 'copy-to-dist-folder', 'minify-html', 'sass:dist', ['uglify:dist'], ['compress'],
-//         callback);
-// });
 
 gulp.task('serve', function(callback) {
     runSequence('sass:dev', 
@@ -188,9 +215,7 @@ gulp.task('serve', function(callback) {
 
 // Shortcut to build and archive all at once
 gulp.task('ba', function() {runSequence(['build'], ['archive'])});
-
 gulp.task('default', ['serve']);
-
 
 // clean up if an error goes unhandled.
 process.on('exit', function() {

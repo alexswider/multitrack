@@ -26,7 +26,7 @@ body {
 }
 
 #startBtn {
-  top: 50%;
+  top: 51%;
   left: 50%;
   position: absolute;
   display: block;
@@ -45,6 +45,14 @@ body {
   margin: auto;
   color: #F42436;
   font-size: 12px;
+}
+
+#connectBtn,
+#playBtn,
+#stopBtn,
+#amountBtn,
+#muteBtn {
+  display: none;
 }
 
 /*

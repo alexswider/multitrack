@@ -7,6 +7,8 @@ function initSocket(){
             $('#messages').append($('<li>').text(msg));
         });
         socket.on("connect", function() {
+            $("#playBtn").css("display","block");
+             $("#muteBtn").css("display","block");
             socket.emit('user_join', "--");
             console.log("connected");
         });
